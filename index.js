@@ -18,8 +18,8 @@ db.once('open', () => {
 });
 
 app.use(bodyParser.json());
-app.use('/', authRoutes);
-app.use('/api', expenseRoutes);
+app.use('/.netlify/functions', authRoutes);
+app.use('.netlify/functions/api', expenseRoutes);
 
 
 app.listen(PORT, () => {
