@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const userController = require('../controllers/authController');
+const userController = require('../authController');
 
 router.get('/', (req, res) => {
     res.json({ message: 'Welcome to the expense endpoint' });

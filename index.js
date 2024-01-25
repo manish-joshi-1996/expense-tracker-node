@@ -5,8 +5,8 @@ const PORT = 3000;
 const app = express();
 const cors = require('cors');
 const path = require('path');
-const authRoutes = require('./functions/authRoutes');
-const expenseRoutes = require('./functions/expenseRoute');
+const authRoutes = require('./src/controllers/functions/authRoutes');
+const expenseRoutes = require('./src/controllers/functions/expenseRoute');
 
 app.use(cors());
 //MongoDB Connection
