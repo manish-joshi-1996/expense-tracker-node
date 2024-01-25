@@ -8,7 +8,6 @@ const path = require('path');
 const authRoutes = require('./routes/authRoutes');
 const expenseRoutes = require('./routes/expenseRoute');
 
-
 app.use(cors());
 //MongoDB Connection
 mongoose.connect('mongodb://localhost:27017/expense_tracker', { useNewUrlParser: true, useUnifiedTopology: true });
